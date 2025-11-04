@@ -19,8 +19,8 @@ class ApplicationTest {
     }
 
     @Test
-    void whenGeneralServiceCreatedBySpringContext_thenCustomerServiceShouldBeNotNull() {
-        log.info("ApplicationTest#whenGeneralServiceCreatedBySpringContext_thenCustomerServiceShouldBeNotNull");
+    void whenGeneralServiceCreatedBySpringContext_thenCustomerServiceShouldNotBeNull() {
+        log.info("ApplicationTest#whenGeneralServiceCreatedBySpringContext_thenCustomerServiceShouldNotBeNull");
         var generalService = context.getBean("generalService", GeneralService.class);
         assertNotNull(generalService.getService());
     }

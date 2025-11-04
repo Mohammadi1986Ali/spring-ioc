@@ -11,6 +11,7 @@
 
     <modules>
         <module>constructor</module>
+        <module>property</module>
         <module>factory-method</module>
     </modules>
 

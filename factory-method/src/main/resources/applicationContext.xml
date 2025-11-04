@@ -4,8 +4,7 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <bean name="factoryMethod" class="com.ai4everyone.tutorial.factorymethod.util.FactoryMethod"/>
-    <bean name="getCustomerService"
-          factory-bean="factoryMethod" factory-method="getService"/>
+    <bean name="getCustomerService" factory-bean="factoryMethod" factory-method="getService"/>
     <bean name="generalService" class="com.ai4everyone.tutorial.factorymethod.service.GeneralServiceImpl">
         <property name="service" ref="getCustomerService"/>
     </bean>

@@ -9,7 +9,7 @@
         <version>1.0.1</version>
     </parent>
 
-    <artifactId>factory-method</artifactId>
+    <artifactId>property</artifactId>
     <packaging>jar</packaging>
 
     <dependencies>
@@ -20,7 +20,7 @@
     </dependencies>
 
     <build>
-        <finalName>factory-method-${project.version}</finalName>
+        <finalName>property-${project.version}</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -31,7 +31,7 @@
                         <manifest>
                             <addClasspath>true</addClasspath>
                             <classpathPrefix>lib/</classpathPrefix>
-                            <mainClass>com.ai4everyone.tutorial.factorymethod.Application</mainClass>
+                            <mainClass>com.ai4everyone.tutorial.property.Application</mainClass>
                         </manifest>
                     </archive>
                 </configuration>

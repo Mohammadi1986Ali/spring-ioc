@@ -1,6 +1,6 @@
 package com.ai4everyone.tutorial;
 
-import com.ai4everyone.tutorial.factorymethod.api.GeneralService;
+import com.ai4everyone.tutorial.api.GeneralService;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
