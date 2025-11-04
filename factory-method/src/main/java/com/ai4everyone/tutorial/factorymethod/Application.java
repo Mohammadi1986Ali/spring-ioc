@@ -1,19 +1,18 @@
-package com.ai4everyone.tutorial.constructor;
+package com.ai4everyone.tutorial.factorymethod;
 
-import com.ai4everyone.tutorial.constructor.api.GeneralService;
+import com.ai4everyone.tutorial.factorymethod.api.GeneralService;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.context.ConfigurableApplicationContext;
+import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 @Slf4j
 public class Application {
-    private static final ConfigurableApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+    private static final ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
 
     public static void main(String[] args) {
         log.info("Application#main");
 
         GeneralService generalService = context.getBean("generalService", GeneralService.class);
         generalService.getService().findCustomerByName("someName");
-        context.close();
     }
 }

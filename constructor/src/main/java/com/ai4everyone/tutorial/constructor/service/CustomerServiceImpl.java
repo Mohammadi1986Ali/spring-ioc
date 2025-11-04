@@ -2,14 +2,12 @@ package com.ai4everyone.tutorial.constructor.service;
 
 import com.ai4everyone.tutorial.constructor.api.CustomerService;
 import com.ai4everyone.tutorial.constructor.model.Customer;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import lombok.extern.slf4j.Slf4j;
 
 import java.util.Optional;
 
+@Slf4j
 public class CustomerServiceImpl implements CustomerService {
-    private static final Logger log = LoggerFactory.getLogger(CustomerServiceImpl.class);
-
     public CustomerServiceImpl() {
         log.info("CustomerServiceImpl#CustomerServiceImpl");
     }

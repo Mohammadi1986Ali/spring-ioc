@@ -1,6 +1,6 @@
-package com.ai4everyone.tutorial.constructor;
+package com.ai4everyone.tutorial;
 
-import com.ai4everyone.tutorial.constructor.api.GeneralService;
+import com.ai4everyone.tutorial.factorymethod.api.GeneralService;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
@@ -19,9 +19,9 @@ class ApplicationTest {
     }
 
     @Test
-    void whenGeneralServiceCreatedBySpringContext_thenCustomerServiceShouldBeNotNull() {
-        log.info("ApplicationTest#whenGeneralServiceCreatedBySpringContext_thenCustomerServiceShouldBeNotNull");
-        var generalService = context.getBean("generalService", GeneralService.class);
+    void whenGeneralServiceObjectCreatedBySpringContext_thenCustomerServiceShouldBeCreated() {
+        log.info("ApplicationTest#whenGeneralServiceObjectCreatedBySpringContext_thenCustomerServiceShouldBeCreated");
+        GeneralService generalService = context.getBean("generalService", GeneralService.class);
         assertNotNull(generalService.getService());
     }
 }
