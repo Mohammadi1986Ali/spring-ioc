@@ -1,4 +1,4 @@
-package com.ai4everyone.tutorial.model;
+package com.ai4everyone.tutorial.staticfactory.model;
 
 import lombok.Getter;
 import lombok.Setter;

@@ -1,7 +1,7 @@
-package com.ai4everyone.tutorial.service;
+package com.ai4everyone.tutorial.property.service;
 
-import com.ai4everyone.tutorial.api.CustomerService;
-import com.ai4everyone.tutorial.model.Customer;
+import com.ai4everyone.tutorial.property.api.CustomerService;
+import com.ai4everyone.tutorial.property.model.Customer;
 import lombok.extern.slf4j.Slf4j;
 
 import java.util.Optional;

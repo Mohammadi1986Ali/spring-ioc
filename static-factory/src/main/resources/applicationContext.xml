@@ -2,8 +2,8 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-    <bean name="customerService" class="com.ai4everyone.tutorial.property.service.CustomerServiceImpl"/>
-    <bean name="generalService" class="com.ai4everyone.tutorial.property.service.GeneralServiceImpl">
-        <property name="service" ref="customerService"/>
+    <bean name="getCustomerService" class="com.ai4everyone.tutorial.staticfactory.util.StaticFactory" factory-method="getCustomerService"/>
+    <bean name="generalService" class="com.ai4everyone.tutorial.staticfactory.service.GeneralServiceImpl">
+        <property name="service" ref="getCustomerService"/>
     </bean>
 </beans>

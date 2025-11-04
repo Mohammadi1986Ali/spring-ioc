@@ -1,6 +1,6 @@
-package com.ai4everyone.tutorial;
+package com.ai4everyone.tutorial.property;
 
-import com.ai4everyone.tutorial.api.GeneralService;
+import com.ai4everyone.tutorial.property.api.GeneralService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;

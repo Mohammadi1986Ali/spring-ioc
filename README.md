@@ -3,3 +3,4 @@
 - constructor
 - property
 - factory-method
+- static-factory

@@ -1,7 +1,7 @@
-package com.ai4everyone.tutorial.service;
+package com.ai4everyone.tutorial.staticfactory.service;
 
-import com.ai4everyone.tutorial.api.CustomerService;
-import com.ai4everyone.tutorial.api.GeneralService;
+import com.ai4everyone.tutorial.staticfactory.api.CustomerService;
+import com.ai4everyone.tutorial.staticfactory.api.GeneralService;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j

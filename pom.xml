@@ -13,6 +13,7 @@
         <module>constructor</module>
         <module>property</module>
         <module>factory-method</module>
+        <module>static-factory</module>
     </modules>
 
     <properties>

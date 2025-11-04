@@ -1,6 +1,6 @@
-package com.ai4everyone.tutorial.api;
+package com.ai4everyone.tutorial.staticfactory.api;
 
-import com.ai4everyone.tutorial.model.Customer;
+import com.ai4everyone.tutorial.staticfactory.model.Customer;
 
 import java.util.Optional;
 
